@@ -1,0 +1,11 @@
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-configmap
+data:
+  application.properties: |
+    app-name=api server demo
+    datasource-url=jdbc:mysql://<production_db_ip>:3306/db_example
+    datasource-username=root
+    datasource-password=admin

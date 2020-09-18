@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sbdemo
+spec:
+  replicas: 2
+  template:
+    spec:
+      containers:
+        - name: sbdemo
+          resources:
+            limits:
+              memory: 1250Mi
+            requests:
+              memory: 1250Mi
